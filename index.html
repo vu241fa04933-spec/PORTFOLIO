@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balineni Gopi | Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Milky Way Galaxy & Deep Space Background Layers -->
+    <div class="milky-way-galaxy"></div>
+    <div class="stars" id="starfield"></div>
+
+    <!-- Planets with Clean Circular Clip-Path (Zero Black Boxes or Borders) -->
+    <div class="planet-wrapper small-earth">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg" alt="Earth">
+        <div class="planet-shading"></div>
+    </div>
+
+    <div class="planet-wrapper distant-planet">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg" alt="Mars">
+        <div class="planet-shading"></div>
+    </div>
+
+    <div class="majestic-comet"></div>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="logo">Balineni Gopi</div>
+        <nav>
+            <ul>
+                <li><a class="nav-link active" onclick="switchPage('home')">Home</a></li>
+                <li><a class="nav-link" onclick="switchPage('about')">About</a></li>
+                <li><a class="nav-link" onclick="switchPage('academics')">Academics</a></li>
+                <li><a class="nav-link" onclick="switchPage('skills')">Skills</a></li>
+                <li><a class="nav-link" onclick="switchPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME PAGE -->
+        <section id="home" class="page-section active">
+            <div class="card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 0.5rem;">Balineni Gopi</h1>
+                <h2 style="font-size: 1.25rem; color: var(--accent); font-weight: 500; margin-bottom: 1.5rem;">B.Tech Computer Science & Engineering Student</h2>
+                <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem; font-size: 1.1rem;">
+                    Welcome to my professional portfolio. Dedicated to building high-performance software applications, scalable backend systems, and modern full-stack web architectures with absolute precision.
+                </p>
+                <button class="btn" onclick="switchPage('about')">Explore Profile</button>
+            </div>
+        </section>
+
+        <!-- ABOUT PAGE -->
+        <section id="about" class="page-section">
+            <div class="card">
+                <div class="profile-grid">
+                    <div class="profile-img-container">
+                        <img src="image_69f283.jpg" [source: 1] alt="Balineni Gopi Profile Photo">
+                    </div>
+                    <div>
+                        <h2 style="margin-bottom: 1.5rem; font-size: 2rem;">About Me</h2>
+                        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.05rem;">
+                            I am an ambitious engineering undergraduate pursuing my Bachelor of Technology in Computer Science and Engineering. Grounded in rigorous problem-solving and modern programming paradigms, I specialize in developing robust applications using Python and Java.
+                        </p>
+                        <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem; font-size: 1.05rem;">
+                            Alongside my academic commitments, I actively maintain a disciplined lifestyle with a strong passion for competitive sports, cultivating teamwork, endurance, and focused execution.
+                        </p>
+                        <div>
+                            <h3 style="margin-bottom: 0.75rem; font-size: 1.15rem; color: var(--text-main);">Interests & Hobbies</h3>
+                            <p style="color: var(--text-muted); font-size: 1rem;">Sports, Software Engineering, Full Stack Systems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ACADEMICS PAGE -->
+        <section id="academics" class="page-section">
+            <div style="margin-bottom: 2.5rem;">
+                <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Academic Credentials</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem;">A verified record of educational milestones and performance.</p>
+            </div>
+            <div class="grid-3">
+                <div class="info-card">
+                    <h3>B.Tech (CSE)</h3>
+                    <p>Computer Science & Engineering</p>
+                    <div class="score">6.3 CGPA</div>
+                </div>
+                <div class="info-card">
+                    <h3>Intermediate / Board of Secondary Education</h3>
+                    <p>Higher Secondary Curriculum</p>
+                    <div class="score">918 Marks</div>
+                </div>
+                <div class="info-card">
+                    <h3>SSC</h3>
+                    <p>Secondary School Certificate</p>
+                    <div class="score">473 Marks</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS PAGE -->
+        <section id="skills" class="page-section">
+            <div style="margin-bottom: 2.5rem;">
+                <h2 style="font-size: 2rem; margin-bottom: 0.5rem;">Technical Expertise</h2>
+                <p style="color: var(--text-muted); font-size: 1.05rem;">Core programming languages and engineering proficiencies.</p>
+            </div>
+            <div class="grid-3">
+                <div class="info-card">
+                    <h3>Python</h3>
+                    <p>Data operations, database connectors, backend script automation, and logic development.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Java</h3>
+                    <p>Object-oriented programming, robust architecture design, and system reliability.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Full Stack Development</h3>
+                    <p>Developing responsive client-facing interfaces and secure server-side integrations.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section id="contact" class="page-section">
+            <div class="card">
+                <h2 style="margin-bottom: 0.5rem; font-size: 2rem;">Get in Touch</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2.5rem; font-size: 1.05rem;">Direct professional communication channels.</p>
+                
+                <div class="contact-box">
+                    <div class="contact-item">
+                        <div>
+                            <strong>Email Address</strong>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem;">balinenigopi06@gmail.com</p>
+                        </div>
+                        <a href="mailto:balinenigopi06@gmail.com" class="btn" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Send Email</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <div>
+                            <strong>GitHub Repository</strong>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem;">vu241fa04933-spec</p>
+                        </div>
+                        <a href="https://github.com/vu241fa04933-spec" target="_blank" class="btn" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Visit GitHub</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <div>
+                            <strong>Mobile Number</strong>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 0.25rem;" id="phone-container">
+                                <span class="hidden-data">••••••••••</span>
+                            </p>
+                        </div>
+                        <button class="btn" id="reveal-btn" onclick="revealPhone()" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">Reveal Number</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Balineni Gopi. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
